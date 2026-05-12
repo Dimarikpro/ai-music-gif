@@ -1,2 +1,3 @@
-# AI Music Gift
-Mobile-first MVP site in Ukrainian. Upload all files to GitHub Pages.
+# AI Music Gift UA — live v4
+
+Исправлено: шкала звука по центру, удалена большая кнопка звука, добавлен маленький значок динамика вверху справа.
