@@ -1,27 +1,13 @@
-# AI Music Gift Landing Page
+# AI Music Gift — українська mobile-first версія
 
-Готовый статический лендинг. Его можно выложить на GitHub Pages, Netlify, Vercel или обычный хостинг.
+Сторінки:
+- `index.html` — головна
+- `order.html` — форма замовлення
+- `style.html` — вибір стилю пісні
+- `upload.html` — завантаження фото
+- `tariffs.html` — тарифи
+- `payment.html` — оплата
+- `thanks.html` — сторінка подяки
+- `demos.html` — приклади робіт
 
-## Как поменять верхнюю фотографию
-Открой файл `styles.css`, найди строку:
-
-```css
-.hero-bg{...background-image:url('...')...}
-```
-
-Замени ссылку внутри `url('...')` на свою фотографию.
-
-## Как выложить на GitHub Pages
-1. Создать новый репозиторий, например `ai-music-gift`.
-2. Загрузить туда файлы `index.html`, `styles.css`, `README.md`.
-3. Открыть Settings → Pages.
-4. Source: Deploy from a branch.
-5. Branch: main / root.
-6. Получить ссылку вида `https://username.github.io/ai-music-gift/`.
-
-## Как выложить на обычный хостинг
-Просто загрузить `index.html` и `styles.css` в папку сайта.
-
-
-## Обновление 12.05.2026
-Сжат верхний hero-блок: фото стало ниже, заголовок и кнопка подняты выше, первый экран стал короче.
+Для GitHub Pages просто завантажити всі файли в корінь репозиторію і зробити Commit changes.
