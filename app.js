@@ -17,3 +17,16 @@ function stopDemo(){
 function goBack(fallback='index.html'){
   if(document.referrer && !document.referrer.includes('t.me')){ history.back(); } else { location.href=fallback; }
 }
+(function initHeroCarousel(){
+  const slides=[...document.querySelectorAll('.hero-slide')];
+  const dots=[...document.querySelectorAll('.hero-dot')];
+  if(!slides.length) return;
+  let active=0;
+  function show(i){
+    active=(i+slides.length)%slides.length;
+    slides.forEach((s,idx)=>s.classList.toggle('active', idx===active));
+    dots.forEach((d,idx)=>d.classList.toggle('active', idx===active));
+  }
+  dots.forEach((d,idx)=>d.addEventListener('click',()=>show(idx)));
+  setInterval(()=>show(active+1), 4200);
+})();
