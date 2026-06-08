@@ -1,74 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Замовлення — AI Music Gift</title>
-  <link rel="stylesheet" href="styles-v6.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AI Music Gift — Замовлення</title>
+
+  <link rel="stylesheet" href="styles-v6.css" />
 </head>
 
 <body>
   <main class="shell">
+
     <header class="page-head">
-      <a class="back" href="index.html">← Назад на головну</a>
+      <a class="back" href="index.html">← Назад</a>
 
       <h1 class="page-title" data-i18n="orderTitle">
         Кому створюємо привітання?
       </h1>
 
-      <p class="lead" style="font-size:15px" data-i18n="orderSubtitle">
+      <p class="lead" data-i18n="orderSubtitle">
         Кілька відповідей — і ми підберемо стиль пісні.
       </p>
     </header>
 
     <section class="form">
+
       <div class="field">
-        <label class="label" data-i18n="recipientLabel">
+        <label class="label" for="recipient" data-i18n="recipientLabel">
           Для кого подарунок?
         </label>
 
-        <select class="select">
-          <option>Для коханої людини</option>
-          <option>Для мами</option>
-          <option>Для тата</option>
-          <option>Для друга / подруги</option>
-          <option>Для дитини</option>
+        <select class="select" id="recipient" name="recipient">
+          <option value="love" data-i18n="recipientLove">Для коханої людини</option>
+          <option value="mother" data-i18n="recipientMother">Для мами</option>
+          <option value="father" data-i18n="recipientFather">Для тата</option>
+          <option value="friend" data-i18n="recipientFriend">Для друга / подруги</option>
+          <option value="child" data-i18n="recipientChild">Для дитини</option>
+          <option value="other" data-i18n="recipientOther">Інше</option>
         </select>
       </div>
 
       <div class="field">
-        <label class="label" data-i18n="occasionLabel">
+        <label class="label" for="occasion" data-i18n="occasionLabel">
           Привід
         </label>
 
-        <select class="select">
-          <option>День народження</option>
-          <option>Річниця</option>
-          <option>Весілля</option>
-          <option>Просто сказати “люблю”</option>
-          <option>Інший привід</option>
+        <select class="select" id="occasion" name="occasion">
+          <option value="birthday" data-i18n="occasionBirthday">День народження</option>
+          <option value="anniversary" data-i18n="occasionAnniversary">Річниця</option>
+          <option value="wedding" data-i18n="occasionWedding">Весілля</option>
+          <option value="love" data-i18n="occasionLove">Просто сказати “люблю”</option>
+          <option value="support" data-i18n="occasionSupport">Підтримати людину</option>
+          <option value="other" data-i18n="occasionOther">Інший привід</option>
         </select>
       </div>
 
       <div class="field">
-        <label class="label" data-i18n="nameLabel">
+        <label class="label" for="personName" data-i18n="nameLabel">
           Ім’я людини
         </label>
 
-        <input class="input" placeholder="Наприклад: Олена">
+        <input
+          class="input"
+          id="personName"
+          name="personName"
+          type="text"
+          placeholder="Наприклад: Олена"
+          data-i18n-placeholder="namePlaceholder"
+        />
       </div>
 
       <div class="field">
-        <label class="label" data-i18n="detailsLabel">
+        <label class="label" for="details" data-i18n="detailsLabel">
           Що важливо згадати?
         </label>
 
-        <textarea class="textarea" placeholder="Кілька фактів, спогадів, теплих слів..."></textarea>
+        <textarea
+          class="textarea"
+          id="details"
+          name="details"
+          placeholder="Кілька фактів, спогадів, теплих слів..."
+          data-i18n-placeholder="detailsPlaceholder"
+        ></textarea>
       </div>
 
       <a class="btn btn-primary" href="style.html" data-i18n="nextButton">
         Далі — обрати стиль
       </a>
+
     </section>
 
     <nav class="bottom-nav">
@@ -92,6 +112,7 @@
         <span data-i18n="navOrder">Замовити</span>
       </a>
     </nav>
+
   </main>
 
   <script src="translations.js"></script>
