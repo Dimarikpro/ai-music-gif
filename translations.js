@@ -13,7 +13,24 @@ const translations = {
     occasionLabel: "Привід",
     nameLabel: "Ім’я людини",
     detailsLabel: "Що важливо згадати?",
-    nextButton: "Далі — обрати стиль"
+    nextButton: "Далі — обрати стиль",
+
+    recipientLove: "Для коханої людини",
+    recipientMother: "Для мами",
+    recipientFather: "Для тата",
+    recipientFriend: "Для друга / подруги",
+    recipientChild: "Для дитини",
+    recipientOther: "Інше",
+
+    occasionBirthday: "День народження",
+    occasionAnniversary: "Річниця",
+    occasionWedding: "Весілля",
+    occasionLove: "Просто сказати “люблю”",
+    occasionSupport: "Підтримати людину",
+    occasionOther: "Інший привід",
+
+    namePlaceholder: "Наприклад: Олена",
+    detailsPlaceholder: "Кілька фактів, спогадів, теплих слів..."
   },
 
   ru: {
@@ -30,7 +47,24 @@ const translations = {
     occasionLabel: "Повод",
     nameLabel: "Имя человека",
     detailsLabel: "Что важно упомянуть?",
-    nextButton: "Дальше — выбрать стиль"
+    nextButton: "Дальше — выбрать стиль",
+
+    recipientLove: "Для любимого человека",
+    recipientMother: "Для мамы",
+    recipientFather: "Для папы",
+    recipientFriend: "Для друга / подруги",
+    recipientChild: "Для ребёнка",
+    recipientOther: "Другое",
+
+    occasionBirthday: "День рождения",
+    occasionAnniversary: "Годовщина",
+    occasionWedding: "Свадьба",
+    occasionLove: "Просто сказать “люблю”",
+    occasionSupport: "Поддержать человека",
+    occasionOther: "Другой повод",
+
+    namePlaceholder: "Например: Елена",
+    detailsPlaceholder: "Несколько фактов, воспоминаний, тёплых слов..."
   },
 
   pl: {
@@ -47,7 +81,24 @@ const translations = {
     occasionLabel: "Okazja",
     nameLabel: "Imię osoby",
     detailsLabel: "Co warto wspomnieć?",
-    nextButton: "Dalej — wybierz styl"
+    nextButton: "Dalej — wybierz styl",
+
+    recipientLove: "Dla ukochanej osoby",
+    recipientMother: "Dla mamy",
+    recipientFather: "Dla taty",
+    recipientFriend: "Dla przyjaciela / przyjaciółki",
+    recipientChild: "Dla dziecka",
+    recipientOther: "Inne",
+
+    occasionBirthday: "Urodziny",
+    occasionAnniversary: "Rocznica",
+    occasionWedding: "Ślub",
+    occasionLove: "Po prostu powiedzieć „kocham”",
+    occasionSupport: "Wesprzeć bliską osobę",
+    occasionOther: "Inna okazja",
+
+    namePlaceholder: "Na przykład: Anna",
+    detailsPlaceholder: "Kilka faktów, wspomnień, ciepłych słów..."
   }
 };
 
@@ -80,6 +131,24 @@ function applyTranslations() {
     if (dictionary[key]) {
       element.textContent = dictionary[key];
     }
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const key = element.getAttribute("data-i18n-placeholder");
+
+    if (dictionary[key]) {
+      element.setAttribute("placeholder", dictionary[key]);
+    }
+  });
+
+  document.querySelectorAll("a[href$='.html']").forEach((link) => {
+    const href = link.getAttribute("href");
+
+    if (!href || href.startsWith("http") || href.includes("?lang=")) {
+      return;
+    }
+
+    link.setAttribute("href", `${href}?lang=${lang}`);
   });
 }
 
