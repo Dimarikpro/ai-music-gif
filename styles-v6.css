@@ -95,3 +95,105 @@ a.back {
 .slide-caption{position:relative;z-index:2;background:rgba(255,255,255,.16);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.28);border-radius:20px;padding:12px 14px;max-width:86%;box-shadow:0 10px 25px rgba(20,10,35,.18)}
 .slide-caption b{display:block;font-size:18px;line-height:1.1}.slide-caption small{display:block;margin-top:4px;font-size:12px;line-height:1.35;opacity:.94}.hero-dots{position:absolute;left:0;right:0;bottom:9px;z-index:3;display:flex;gap:6px;justify-content:center}.hero-dot{width:7px;height:7px;border-radius:99px;background:rgba(255,255,255,.55);border:0;padding:0}.hero-dot.active{width:22px;background:#fff}.hero-v6 .top{top:0}.hero-v6 .wave{top:252px;width:68%;height:40px;opacity:.58}.hero-v6 .hero-copy{padding:28px 23px 18px}.hero-v6 h1{font-size:32px}.hero-v6 .script{font-size:31px}.hero-v6 .lead{font-size:15px;margin-top:16px}.ai-note{font-size:12px;line-height:1.35;color:var(--muted);margin:12px auto 0;max-width:320px}.hero-mini-products{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px auto 0;max-width:355px}.mini-product{background:#fff;border:1px solid #f4d4e8;border-radius:18px;padding:10px 12px;text-align:left;box-shadow:0 8px 22px rgba(236,47,140,.1);font-size:12px;font-weight:900}.mini-product span{font-size:19px;margin-right:4px}.product-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:26px}.product-card{background:#fff;border:1px solid #f0e2ee;border-radius:24px;padding:18px;box-shadow:0 12px 26px rgba(20,20,50,.08)}.product-card .emoji{font-size:30px}.product-card h3{margin:9px 0 7px;font-size:16px;line-height:1.1}.product-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.4}.demo-strip{display:flex;gap:14px;overflow-x:auto;margin:24px -24px 0;padding:0 24px 8px;scroll-snap-type:x mandatory}.demo-strip::-webkit-scrollbar{display:none}.demo-tile{min-width:265px;height:178px;border-radius:26px;overflow:hidden;position:relative;scroll-snap-align:start;background-size:cover;background-position:center;color:#fff;box-shadow:0 18px 34px rgba(20,20,50,.18)}.demo-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,5,25,.12),rgba(10,5,25,.75))}.demo-tile .play-big{right:18px;top:48px;height:58px;width:58px;z-index:2}.demo-tile .demo-text{z-index:2;left:18px;right:84px;bottom:18px}.media-note{background:#fff7fb;border:1px dashed #e5c6ec;border-radius:22px;padding:16px;font-size:13px;line-height:1.5;color:var(--muted);margin-top:18px}.requirements{background:#fff;border:1px solid #f0e2ee;border-radius:24px;padding:18px;margin-top:18px;box-shadow:0 12px 26px rgba(20,20,50,.06)}.requirements h3{margin:0 0 10px;font-size:16px}.requirements ul{margin:0;padding-left:18px;color:var(--muted);font-size:13px;line-height:1.55}.lang-switch{display:flex;justify-content:center;gap:8px;margin-top:15px}.lang-switch a{font-size:12px;font-weight:900;color:var(--violet);background:#fff;border:1px solid #efd9ff;border-radius:999px;padding:7px 10px}.bottom-spacer{height:18px}
 @media(min-width:760px){.hero-v6{min-height:620px}.hero-carousel{height:300px}}
+/* Style page emotional cards */
+
+.style-page-head {
+  padding-bottom: 12px;
+}
+
+.style-choice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 10px 14px 92px;
+}
+
+.style-choice-card {
+  min-height: 164px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(120, 79, 255, 0.12);
+  box-shadow: 0 12px 30px rgba(69, 39, 120, 0.09);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.style-choice-card:active {
+  transform: scale(0.98);
+}
+
+.style-choice-visual {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 31px;
+  position: relative;
+  overflow: hidden;
+}
+
+.style-choice-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.95;
+}
+
+.style-choice-visual span {
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 6px 12px rgba(43, 22, 86, 0.18));
+}
+
+.style-choice-content {
+  padding: 11px 12px 13px;
+}
+
+.style-choice-content h3 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #261247;
+}
+
+.style-choice-content p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.35;
+  color: rgba(38, 18, 71, 0.72);
+}
+
+.style-choice-romantic .style-choice-visual::before {
+  background: radial-gradient(circle at 30% 20%, #ffd1e2, #ff7eb3 45%, #9b5cf6 100%);
+}
+
+.style-choice-blues .style-choice-visual::before {
+  background: radial-gradient(circle at 30% 20%, #8bd3ff, #5468ff 42%, #261247 100%);
+}
+
+.style-choice-piano .style-choice-visual::before {
+  background: radial-gradient(circle at 30% 20%, #ffffff, #d9ccff 45%, #8b5cf6 100%);
+}
+
+.style-choice-passion .style-choice-visual::before {
+  background: radial-gradient(circle at 30% 20%, #ffd1a8, #ff5c8a 45%, #c026d3 100%);
+}
+
+.style-choice-family .style-choice-visual::before {
+  background: radial-gradient(circle at 30% 20%, #fff3a3, #78e08f 45%, #4fc3f7 100%);
+}
+
+.style-choice-cinematic .style-choice-visual::before {
+  background: radial-gradient(circle at 30% 20%, #b8e6ff, #8b5cf6 45%, #1e1b4b 100%);
+}
+
+.style-demo-btn {
+  margin: -72px 14px 92px;
+  position: relative;
+  z-index: 3;
+}
