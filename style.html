@@ -12,7 +12,7 @@
 <body>
   <main class="shell">
 
-    <header class="page-head">
+    <header class="page-head style-page-head">
       <a class="back" href="order.html" data-i18n="styleBack">
         ← Назад до форми
       </a>
@@ -26,39 +26,73 @@
       </p>
     </header>
 
-    <section class="form">
-      <div class="option-grid">
+    <section class="style-choice-grid">
 
-        <a class="option" href="upload.html">
-          <span data-i18n="styleRomantic">Романтична балада</span>
-        </a>
-
-        <a class="option" href="upload.html">
-          <span data-i18n="styleBlues">Нічний blues</span>
-        </a>
-
-        <a class="option" href="upload.html">
-          <span data-i18n="stylePiano">Piano pop</span>
-        </a>
-
-        <a class="option" href="upload.html">
-          <span data-i18n="stylePassion">Пристрасна</span>
-        </a>
-
-        <a class="option" href="upload.html">
-          <span data-i18n="styleFamily">☀️ Світла сімейна</span>
-        </a>
-
-        <a class="option" href="upload.html">
-          <span data-i18n="styleCinematic">Кінематографічна</span>
-        </a>
-
-      </div>
-
-      <a class="btn btn-secondary" href="demos.html" data-i18n="styleListen">
-        ▶ Послухати приклад
+      <a class="style-choice-card style-choice-romantic" href="upload.html">
+        <div class="style-choice-visual">
+          <span>💞</span>
+        </div>
+        <div class="style-choice-content">
+          <h3 data-i18n="styleRomantic">Романтична балада</h3>
+          <p data-i18n="styleRomanticDesc">Ніжна, тепла і зворушлива пісня для коханої людини.</p>
+        </div>
       </a>
+
+      <a class="style-choice-card style-choice-blues" href="upload.html">
+        <div class="style-choice-visual">
+          <span>🌙</span>
+        </div>
+        <div class="style-choice-content">
+          <h3 data-i18n="styleBlues">Нічний blues</h3>
+          <p data-i18n="styleBluesDesc">Глибокий, спокійний стиль з атмосферою вечора.</p>
+        </div>
+      </a>
+
+      <a class="style-choice-card style-choice-piano" href="upload.html">
+        <div class="style-choice-visual">
+          <span>🎹</span>
+        </div>
+        <div class="style-choice-content">
+          <h3 data-i18n="stylePiano">Piano pop</h3>
+          <p data-i18n="stylePianoDesc">Легкий, сучасний і мелодійний варіант.</p>
+        </div>
+      </a>
+
+      <a class="style-choice-card style-choice-passion" href="upload.html">
+        <div class="style-choice-visual">
+          <span>🔥</span>
+        </div>
+        <div class="style-choice-content">
+          <h3 data-i18n="stylePassion">Пристрасна</h3>
+          <p data-i18n="stylePassionDesc">Більше емоцій, вогню і сильного почуття.</p>
+        </div>
+      </a>
+
+      <a class="style-choice-card style-choice-family" href="upload.html">
+        <div class="style-choice-visual">
+          <span>☀️</span>
+        </div>
+        <div class="style-choice-content">
+          <h3 data-i18n="styleFamily">Світла сімейна</h3>
+          <p data-i18n="styleFamilyDesc">Тепла пісня для мами, тата, дітей або всієї родини.</p>
+        </div>
+      </a>
+
+      <a class="style-choice-card style-choice-cinematic" href="upload.html">
+        <div class="style-choice-visual">
+          <span>🎬</span>
+        </div>
+        <div class="style-choice-content">
+          <h3 data-i18n="styleCinematic">Кінематографічна</h3>
+          <p data-i18n="styleCinematicDesc">Як музика до важливого моменту життя.</p>
+        </div>
+      </a>
+
     </section>
+
+    <a class="btn btn-secondary style-demo-btn" href="demos.html" data-i18n="styleListen">
+      ▶ Послухати приклад
+    </a>
 
     <nav class="bottom-nav">
       <a href="index.html">
@@ -84,7 +118,7 @@
 
   </main>
 
-  <script src="translations.js?v=3"></script>
+  <script src="translations.js?v=5"></script>
   <script src="app.js"></script>
 </body>
 </html>
