@@ -30,7 +30,18 @@ const translations = {
     occasionOther: "Інший привід",
 
     namePlaceholder: "Наприклад: Олена",
-    detailsPlaceholder: "Кілька фактів, спогадів, теплих слів..."
+    detailsPlaceholder: "Кілька фактів, спогадів, теплих слів...",
+
+    styleBack: "← Назад до форми",
+    styleTitle: "Оберіть стиль пісні",
+    styleSubtitle: "Настрій важливіший за жанр. Виберіть те, що ближче.",
+    styleRomantic: "Романтична балада",
+    styleBlues: "Нічний blues",
+    stylePiano: "Piano pop",
+    stylePassion: "Пристрасна",
+    styleFamily: "☀️ Світла сімейна",
+    styleCinematic: "Кінематографічна",
+    styleListen: "▶ Послухати приклад"
   },
 
   ru: {
@@ -64,7 +75,18 @@ const translations = {
     occasionOther: "Другой повод",
 
     namePlaceholder: "Например: Елена",
-    detailsPlaceholder: "Несколько фактов, воспоминаний, тёплых слов..."
+    detailsPlaceholder: "Несколько фактов, воспоминаний, тёплых слов...",
+
+    styleBack: "← Назад к форме",
+    styleTitle: "Выберите стиль песни",
+    styleSubtitle: "Настроение важнее жанра. Выберите то, что ближе.",
+    styleRomantic: "Романтическая баллада",
+    styleBlues: "Ночной blues",
+    stylePiano: "Piano pop",
+    stylePassion: "Страстная",
+    styleFamily: "☀️ Светлая семейная",
+    styleCinematic: "Кинематографичная",
+    styleListen: "▶ Послушать пример"
   },
 
   pl: {
@@ -98,7 +120,18 @@ const translations = {
     occasionOther: "Inna okazja",
 
     namePlaceholder: "Na przykład: Anna",
-    detailsPlaceholder: "Kilka faktów, wspomnień, ciepłych słów..."
+    detailsPlaceholder: "Kilka faktów, wspomnień, ciepłych słów...",
+
+    styleBack: "← Wróć do formularza",
+    styleTitle: "Wybierz styl piosenki",
+    styleSubtitle: "Nastrój jest ważniejszy niż gatunek. Wybierz to, co pasuje najlepiej.",
+    styleRomantic: "Romantyczna ballada",
+    styleBlues: "Nocny blues",
+    stylePiano: "Piano pop",
+    stylePassion: "Namiętna",
+    styleFamily: "☀️ Jasna rodzinna",
+    styleCinematic: "Filmowa",
+    styleListen: "▶ Posłuchaj przykładu"
   }
 };
 
