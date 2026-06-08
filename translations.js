@@ -39,9 +39,16 @@ const translations = {
     styleBlues: "Нічний blues",
     stylePiano: "Piano pop",
     stylePassion: "Пристрасна",
-    styleFamily: "☀️ Світла сімейна",
+    styleFamily: "Світла сімейна",
     styleCinematic: "Кінематографічна",
-    styleListen: "▶ Послухати приклад"
+    styleListen: "▶ Послухати приклад",
+
+    styleRomanticDesc: "Ніжна, тепла і зворушлива пісня для коханої людини.",
+    styleBluesDesc: "Глибокий, спокійний стиль з атмосферою вечора.",
+    stylePianoDesc: "Легкий, сучасний і мелодійний варіант.",
+    stylePassionDesc: "Більше емоцій, вогню і сильного почуття.",
+    styleFamilyDesc: "Тепла пісня для мами, тата, дітей або всієї родини.",
+    styleCinematicDesc: "Як музика до важливого моменту життя."
   },
 
   ru: {
@@ -84,9 +91,16 @@ const translations = {
     styleBlues: "Ночной blues",
     stylePiano: "Piano pop",
     stylePassion: "Страстная",
-    styleFamily: "☀️ Светлая семейная",
+    styleFamily: "Светлая семейная",
     styleCinematic: "Кинематографичная",
-    styleListen: "▶ Послушать пример"
+    styleListen: "▶ Послушать пример",
+
+    styleRomanticDesc: "Нежная, тёплая и трогательная песня для любимого человека.",
+    styleBluesDesc: "Глубокий, спокойный стиль с вечерней атмосферой.",
+    stylePianoDesc: "Лёгкий, современный и мелодичный вариант.",
+    stylePassionDesc: "Больше эмоций, огня и сильного чувства.",
+    styleFamilyDesc: "Тёплая песня для мамы, папы, детей или всей семьи.",
+    styleCinematicDesc: "Как музыка к важному моменту жизни."
   },
 
   pl: {
@@ -129,9 +143,16 @@ const translations = {
     styleBlues: "Nocny blues",
     stylePiano: "Piano pop",
     stylePassion: "Namiętna",
-    styleFamily: "☀️ Jasna rodzinna",
+    styleFamily: "Jasna rodzinna",
     styleCinematic: "Filmowa",
-    styleListen: "▶ Posłuchaj przykładu"
+    styleListen: "▶ Posłuchaj przykładu",
+
+    styleRomanticDesc: "Delikatna, ciepła i wzruszająca piosenka dla ukochanej osoby.",
+    styleBluesDesc: "Głęboki, spokojny styl z wieczornym klimatem.",
+    stylePianoDesc: "Lekki, nowoczesny i melodyjny wariant.",
+    stylePassionDesc: "Więcej emocji, ognia i mocnego uczucia.",
+    styleFamilyDesc: "Ciepła piosenka dla mamy, taty, dzieci albo całej rodziny.",
+    styleCinematicDesc: "Jak muzyka do ważnego momentu w życiu."
   }
 };
 
