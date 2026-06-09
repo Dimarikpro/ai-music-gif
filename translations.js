@@ -164,6 +164,15 @@ function getCurrentLang() {
     return langFromUrl;
   }
 
+  return "uk";
+}
+  const params = new URLSearchParams(window.location.search);
+  const langFromUrl = params.get("lang");
+
+  if (["uk", "ru", "pl"].includes(langFromUrl)) {
+    return langFromUrl;
+  }
+
   const browserLang = navigator.language.slice(0, 2);
 
   if (browserLang === "uk") return "uk";
