@@ -3,114 +3,216 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Замовлення пісні — AI Music Gift</title>
-  <link rel="stylesheet" href="styles-v6.css?v=8" />
+  <link rel="stylesheet" href="styles-v6.css?v=10" />
 </head>
 
 <body>
-  <main class="shell">
-    <header class="page-head">
-      <a class="back" href="index.html">← Назад</a>
+<main class="shell">
+  <header class="page-head">
+    <a class="back" href="index.html">← Назад</a>
+    <h1 class="page-title">Замовлення персональної пісні</h1>
+    <p class="lead">Заповніть кілька деталей — і ми створимо пісню саме для вашої людини.</p>
+  </header>
 
-      <h1 class="page-title" data-i18n="orderTitle">
-        Замовлення персональної пісні
-      </h1>
+  <section class="form">
 
-      <p class="lead" data-i18n="orderSubtitle">
-        Заповніть кілька деталей — і ми створимо пісню саме для цієї людини.
-      </p>
-    </header>
+    <div class="field">
+      <label class="label">Оберіть формат</label>
+      <div class="plan-toggle">
+        <label class="plan-card">
+          <input type="radio" name="songPlan" value="quick" checked>
+          <strong>Швидка пісня</strong>
+          <span>Теплий подарунок, мінімум питань, 24–48 годин.</span>
+        </label>
 
-    <section class="form">
+        <label class="plan-card">
+          <input type="radio" name="songPlan" value="story">
+          <strong>Пісня з історією</strong>
+          <span>Більше деталей, глибше попадання, особистий сенс.</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Для кого пісня?</label>
+      <select class="select">
+        <option>Кохана людина</option>
+        <option>Мама</option>
+        <option>Тато</option>
+        <option>Дитина</option>
+        <option>Друг / подруга</option>
+        <option>Колега</option>
+        <option>Інше</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label class="label">Привід</label>
+      <select class="select">
+        <option>День народження</option>
+        <option>Річниця</option>
+        <option>Весілля</option>
+        <option>Подяка</option>
+        <option>Підтримка</option>
+        <option>Просто сказати “люблю”</option>
+        <option>Інше</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label class="label">Ім’я людини</label>
+      <input class="input" type="text" placeholder="Наприклад: Олена">
+    </div>
+
+    <div class="field">
+      <label class="label">Який настрій має бути у пісні?</label>
+      <select class="select">
+        <option>Ніжна</option>
+        <option>Весела</option>
+        <option>Романтична</option>
+        <option>Душевна</option>
+        <option>Зворушлива</option>
+        <option>З легким гумором</option>
+        <option>Енергійна</option>
+        <option>Спокійна</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label class="label">Які емоції має викликати пісня?</label>
+      <select class="select">
+        <option>Радість</option>
+        <option>Сльози</option>
+        <option>Усмішку</option>
+        <option>Ностальгію</option>
+        <option>Гордість</option>
+        <option>Вдячність</option>
+        <option>Відчуття любові</option>
+        <option>Підтримку</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label class="label">Що важливо згадати?</label>
+      <textarea class="textarea" placeholder="Напишіть головні деталі: імена, спогади, події, теплі слова..."></textarea>
+    </div>
+
+    <div class="field">
+      <label class="label">Що краще не згадувати?</label>
+      <textarea class="textarea" placeholder="Теми, імена або події, яких краще уникати..."></textarea>
+    </div>
+
+    <div id="storyBlock" class="deep-block hidden">
+      <h2>Пісня з історією</h2>
+      <p>Цей блок допоможе зробити пісню глибшою і точнішою.</p>
 
       <div class="field">
-        <label class="label" for="recipient" data-i18n="recipientLabel">Для кого пісня?</label>
-        <select class="select" id="recipient" name="recipient">
-          <option value="love" data-i18n="recipientLove">Для коханої людини</option>
-          <option value="mother" data-i18n="recipientMother">Для мами</option>
-          <option value="father" data-i18n="recipientFather">Для тата</option>
-          <option value="friend" data-i18n="recipientFriend">Для друга / подруги</option>
-          <option value="child" data-i18n="recipientChild">Для дитини</option>
-          <option value="other" data-i18n="recipientOther">Інше</option>
+        <label class="label">Яка у вас історія з цією людиною?</label>
+        <textarea class="textarea" placeholder="Як ви познайомились, що вас пов’язує, чому ця людина важлива?"></textarea>
+      </div>
+
+      <div class="field">
+        <label class="label">3–5 фактів про людину</label>
+        <textarea class="textarea" placeholder="Характер, звички, мрії, робота, сім’я, спільні спогади, улюблені фрази..."></textarea>
+      </div>
+
+      <div class="field">
+        <label class="label">За що ви вдячні цій людині?</label>
+        <textarea class="textarea" placeholder="Напишіть простими словами, за що хочеться сказати дякую."></textarea>
+      </div>
+
+      <div class="field">
+        <label class="label">Який момент має бути головним у пісні?</label>
+        <textarea class="textarea" placeholder="Один головний сенс або емоція, навколо якої будується пісня."></textarea>
+      </div>
+
+      <div class="field">
+        <label class="label">Чи є фраза, яку обов’язково треба вставити?</label>
+        <input class="input" type="text" placeholder="Наприклад: “ти моє сонце”">
+      </div>
+
+      <div class="field">
+        <label class="label">Як краще звертатися до людини?</label>
+        <select class="select">
+          <option>По імені</option>
+          <option>Мама</option>
+          <option>Кохана</option>
+          <option>Сонечко</option>
+          <option>Рідна</option>
+          <option>Інше</option>
         </select>
       </div>
 
       <div class="field">
-        <label class="label" for="occasion" data-i18n="occasionLabel">Привід</label>
-        <select class="select" id="occasion" name="occasion">
-          <option value="birthday" data-i18n="occasionBirthday">День народження</option>
-          <option value="anniversary" data-i18n="occasionAnniversary">Річниця</option>
-          <option value="wedding" data-i18n="occasionWedding">Весілля</option>
-          <option value="love" data-i18n="occasionLove">Просто сказати “люблю”</option>
-          <option value="support" data-i18n="occasionSupport">Підтримати людину</option>
-          <option value="other" data-i18n="occasionOther">Інший привід</option>
+        <label class="label">Який стиль тексту ближче?</label>
+        <select class="select">
+          <option>Простий і щирий</option>
+          <option>Поетичний</option>
+          <option>Сучасний</option>
+          <option>З гумором</option>
+          <option>Дуже емоційний</option>
         </select>
       </div>
+    </div>
 
-      <div class="field">
-        <label class="label" for="songLanguage" data-i18n="songLanguageLabel">Мова пісні</label>
-        <select class="select" id="songLanguage" name="songLanguage">
-          <option value="uk">Українська</option>
-          <option value="ru">Русский</option>
-          <option value="pl">Polski</option>
-        </select>
-      </div>
+    <div class="field">
+      <label class="label">Ваше ім’я</label>
+      <input class="input" type="text" placeholder="Як до вас звертатися?">
+    </div>
 
-      <div class="field">
-        <label class="label" for="personName" data-i18n="nameLabel">Ім’я людини</label>
-        <input class="input" id="personName" name="personName" type="text" placeholder="Наприклад: Олена" data-i18n-placeholder="namePlaceholder" />
-      </div>
+    <div class="field">
+      <label class="label">Як з вами зв’язатися?</label>
+      <select class="select">
+        <option>Telegram</option>
+        <option>WhatsApp</option>
+        <option>Viber</option>
+        <option>Телефон</option>
+      </select>
+    </div>
 
-      <div class="field">
-        <label class="label" for="details" data-i18n="detailsLabel">Що важливо згадати?</label>
-        <textarea class="textarea" id="details" name="details" placeholder="Кілька фактів, спогадів, теплих слів..." data-i18n-placeholder="detailsPlaceholder"></textarea>
-      </div>
+    <div class="field">
+      <label class="label">Контакт</label>
+      <input class="input" type="text" placeholder="Напишіть номер телефону або нікнейм">
+    </div>
 
-      <div class="field">
-        <label class="label" for="facts" data-i18n="factsLabel">3–5 фактів про людину</label>
-        <textarea class="textarea" id="facts" name="facts" placeholder="Характер, звички, спільні історії, мрії..." data-i18n-placeholder="factsPlaceholder"></textarea>
-      </div>
+    <div class="field">
+      <label class="label">Коли потрібна пісня?</label>
+      <select class="select">
+        <option>Не терміново</option>
+        <option>За 24–48 годин</option>
+        <option>Терміново</option>
+      </select>
+    </div>
 
-      <div class="field">
-        <label class="label" for="emotion" data-i18n="emotionLabel">Які емоції має викликати пісня?</label>
-        <textarea class="textarea" id="emotion" name="emotion" placeholder="Наприклад: щоб людина посміхнулась, розчулилась, відчула любов..." data-i18n-placeholder="emotionPlaceholder"></textarea>
-      </div>
+    <a class="btn btn-primary" href="style.html?lang=uk">Далі — обрати стиль пісні</a>
+  </section>
 
-      <div class="field">
-        <label class="label" for="avoid" data-i18n="avoidLabel">Що не можна згадувати?</label>
-        <textarea class="textarea" id="avoid" name="avoid" placeholder="Теми, імена або події, яких краще уникати..." data-i18n-placeholder="avoidPlaceholder"></textarea>
-      </div>
+  <nav class="bottom-nav">
+    <a href="index.html?lang=uk"><b>♡</b><span>Головна</span></a>
+    <a href="demos.html?lang=uk"><b>▶</b><span>Демо</span></a>
+    <a href="tariffs.html?lang=uk"><b>₴</b><span>Тарифи</span></a>
+    <a href="order.html?lang=uk"><b>✎</b><span>Замовити</span></a>
+  </nav>
+</main>
 
-      <div class="field">
-        <label class="label" for="customerName" data-i18n="customerNameLabel">Ваше ім’я</label>
-        <input class="input" id="customerName" name="customerName" type="text" placeholder="Як до вас звертатися?" data-i18n-placeholder="customerNamePlaceholder" />
-      </div>
+<script>
+  const radios = document.querySelectorAll('input[name="songPlan"]');
+  const storyBlock = document.getElementById('storyBlock');
 
-      <div class="field">
-        <label class="label" for="contact" data-i18n="contactLabel">Як з вами зв’язатися?</label>
-        <input class="input" id="contact" name="contact" type="text" placeholder="Telegram, WhatsApp або телефон" data-i18n-placeholder="contactPlaceholder" />
-      </div>
+  radios.forEach((radio) => {
+    radio.addEventListener('change', () => {
+      if (radio.value === 'story' && radio.checked) {
+        storyBlock.classList.remove('hidden');
+      }
 
-      <div class="field">
-        <label class="label" for="email" data-i18n="emailLabel">Email, якщо зручно</label>
-        <input class="input" id="email" name="email" type="email" placeholder="Необов’язково" data-i18n-placeholder="emailPlaceholder" />
-      </div>
+      if (radio.value === 'quick' && radio.checked) {
+        storyBlock.classList.add('hidden');
+      }
+    });
+  });
+</script>
 
-      <a class="btn btn-primary" href="style.html" data-i18n="nextButton">
-        Далі — обрати стиль
-      </a>
-    </section>
-
-    <nav class="bottom-nav">
-      <a href="index.html"><b>♡</b><span data-i18n="navHome">Головна</span></a>
-      <a href="demos.html"><b>▶</b><span data-i18n="navDemos">Демо</span></a>
-      <a href="tariffs.html"><b>₴</b><span data-i18n="navTariffs">Тарифи</span></a>
-      <a href="order.html"><b>✎</b><span data-i18n="navOrder">Замовити</span></a>
-    </nav>
-  </main>
-
-  <script src="translations.js?v=9"></script>
-  <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
