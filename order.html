@@ -4,33 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>AI Music Gift — Замовлення</title>
-
-  <link rel="stylesheet" href="styles-v6.css" />
+  <title>Замовлення пісні — AI Music Gift</title>
+  <link rel="stylesheet" href="styles-v6.css?v=8" />
 </head>
 
 <body>
   <main class="shell">
-
     <header class="page-head">
       <a class="back" href="index.html">← Назад</a>
 
       <h1 class="page-title" data-i18n="orderTitle">
-        Кому створюємо привітання?
+        Замовлення персональної пісні
       </h1>
 
       <p class="lead" data-i18n="orderSubtitle">
-        Кілька відповідей — і ми підберемо стиль пісні.
+        Заповніть кілька деталей — і ми створимо пісню саме для цієї людини.
       </p>
     </header>
 
     <section class="form">
 
       <div class="field">
-        <label class="label" for="recipient" data-i18n="recipientLabel">
-          Для кого подарунок?
-        </label>
-
+        <label class="label" for="recipient" data-i18n="recipientLabel">Для кого пісня?</label>
         <select class="select" id="recipient" name="recipient">
           <option value="love" data-i18n="recipientLove">Для коханої людини</option>
           <option value="mother" data-i18n="recipientMother">Для мами</option>
@@ -42,10 +37,7 @@
       </div>
 
       <div class="field">
-        <label class="label" for="occasion" data-i18n="occasionLabel">
-          Привід
-        </label>
-
+        <label class="label" for="occasion" data-i18n="occasionLabel">Привід</label>
         <select class="select" id="occasion" name="occasion">
           <option value="birthday" data-i18n="occasionBirthday">День народження</option>
           <option value="anniversary" data-i18n="occasionAnniversary">Річниця</option>
@@ -57,65 +49,68 @@
       </div>
 
       <div class="field">
-        <label class="label" for="personName" data-i18n="nameLabel">
-          Ім’я людини
-        </label>
-
-        <input
-          class="input"
-          id="personName"
-          name="personName"
-          type="text"
-          placeholder="Наприклад: Олена"
-          data-i18n-placeholder="namePlaceholder"
-        />
+        <label class="label" for="songLanguage" data-i18n="songLanguageLabel">Мова пісні</label>
+        <select class="select" id="songLanguage" name="songLanguage">
+          <option value="uk">Українська</option>
+          <option value="ru">Русский</option>
+          <option value="pl">Polski</option>
+        </select>
       </div>
 
       <div class="field">
-        <label class="label" for="details" data-i18n="detailsLabel">
-          Що важливо згадати?
-        </label>
+        <label class="label" for="personName" data-i18n="nameLabel">Ім’я людини</label>
+        <input class="input" id="personName" name="personName" type="text" placeholder="Наприклад: Олена" data-i18n-placeholder="namePlaceholder" />
+      </div>
 
-        <textarea
-          class="textarea"
-          id="details"
-          name="details"
-          placeholder="Кілька фактів, спогадів, теплих слів..."
-          data-i18n-placeholder="detailsPlaceholder"
-        ></textarea>
+      <div class="field">
+        <label class="label" for="details" data-i18n="detailsLabel">Що важливо згадати?</label>
+        <textarea class="textarea" id="details" name="details" placeholder="Кілька фактів, спогадів, теплих слів..." data-i18n-placeholder="detailsPlaceholder"></textarea>
+      </div>
+
+      <div class="field">
+        <label class="label" for="facts" data-i18n="factsLabel">3–5 фактів про людину</label>
+        <textarea class="textarea" id="facts" name="facts" placeholder="Характер, звички, спільні історії, мрії..." data-i18n-placeholder="factsPlaceholder"></textarea>
+      </div>
+
+      <div class="field">
+        <label class="label" for="emotion" data-i18n="emotionLabel">Які емоції має викликати пісня?</label>
+        <textarea class="textarea" id="emotion" name="emotion" placeholder="Наприклад: щоб людина посміхнулась, розчулилась, відчула любов..." data-i18n-placeholder="emotionPlaceholder"></textarea>
+      </div>
+
+      <div class="field">
+        <label class="label" for="avoid" data-i18n="avoidLabel">Що не можна згадувати?</label>
+        <textarea class="textarea" id="avoid" name="avoid" placeholder="Теми, імена або події, яких краще уникати..." data-i18n-placeholder="avoidPlaceholder"></textarea>
+      </div>
+
+      <div class="field">
+        <label class="label" for="customerName" data-i18n="customerNameLabel">Ваше ім’я</label>
+        <input class="input" id="customerName" name="customerName" type="text" placeholder="Як до вас звертатися?" data-i18n-placeholder="customerNamePlaceholder" />
+      </div>
+
+      <div class="field">
+        <label class="label" for="contact" data-i18n="contactLabel">Як з вами зв’язатися?</label>
+        <input class="input" id="contact" name="contact" type="text" placeholder="Telegram, WhatsApp або телефон" data-i18n-placeholder="contactPlaceholder" />
+      </div>
+
+      <div class="field">
+        <label class="label" for="email" data-i18n="emailLabel">Email, якщо зручно</label>
+        <input class="input" id="email" name="email" type="email" placeholder="Необов’язково" data-i18n-placeholder="emailPlaceholder" />
       </div>
 
       <a class="btn btn-primary" href="style.html" data-i18n="nextButton">
         Далі — обрати стиль
       </a>
-
     </section>
 
     <nav class="bottom-nav">
-      <a href="index.html">
-        <b>♡</b>
-        <span data-i18n="navHome">Головна</span>
-      </a>
-
-      <a href="demos.html">
-        <b>▶</b>
-        <span data-i18n="navDemos">Демо</span>
-      </a>
-
-      <a href="tariffs.html">
-        <b>₴</b>
-        <span data-i18n="navTariffs">Тарифи</span>
-      </a>
-
-      <a href="order.html">
-        <b>✎</b>
-        <span data-i18n="navOrder">Замовити</span>
-      </a>
+      <a href="index.html"><b>♡</b><span data-i18n="navHome">Головна</span></a>
+      <a href="demos.html"><b>▶</b><span data-i18n="navDemos">Демо</span></a>
+      <a href="tariffs.html"><b>₴</b><span data-i18n="navTariffs">Тарифи</span></a>
+      <a href="order.html"><b>✎</b><span data-i18n="navOrder">Замовити</span></a>
     </nav>
-
   </main>
 
- <script src="translations.js?v=2"></script>
-<script src="app.js"></script>
+  <script src="translations.js?v=9"></script>
+  <script src="app.js"></script>
 </body>
 </html>
