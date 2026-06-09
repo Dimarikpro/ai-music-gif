@@ -192,3 +192,61 @@ a.back {
   position: relative !important;
   z-index: 3 !important;
 }
+/* Ukrainian smart order form */
+
+.plan-toggle {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.plan-card {
+  display: block;
+  padding: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(120, 79, 255, 0.16);
+  box-shadow: 0 10px 24px rgba(69, 39, 120, 0.08);
+}
+
+.plan-card input {
+  margin-right: 8px;
+}
+
+.plan-card strong {
+  display: inline-block;
+  font-size: 15px;
+  color: #261247;
+}
+
+.plan-card span {
+  display: block;
+  margin-top: 7px;
+  font-size: 13px;
+  line-height: 1.35;
+  color: rgba(38, 18, 71, 0.72);
+}
+
+.deep-block {
+  margin: 18px 0;
+  padding: 16px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(255, 235, 246, 0.95), rgba(238, 232, 255, 0.95));
+  border: 1px solid rgba(120, 79, 255, 0.14);
+}
+
+.deep-block h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  color: #261247;
+}
+
+.deep-block p {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: rgba(38, 18, 71, 0.72);
+}
+
+.hidden {
+  display: none;
+}
