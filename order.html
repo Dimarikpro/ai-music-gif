@@ -103,7 +103,7 @@
       <textarea class="textarea" placeholder="Теми, імена або події, яких краще уникати..."></textarea>
     </div>
 
-    <div id="storyBlock" class="deep-block hidden">
+    <div id="storyBlock" class="deep-block" style="display:none;">
       <h2>Пісня з історією</h2>
       <p>Цей блок допоможе зробити пісню глибшою і точнішою.</p>
 
@@ -197,19 +197,25 @@
 </main>
 
 <script>
-  const radios = document.querySelectorAll('input[name="songPlan"]');
-  const storyBlock = document.getElementById('storyBlock');
+  document.addEventListener("DOMContentLoaded", function () {
+    const radios = document.querySelectorAll('input[name="songPlan"]');
+    const storyBlock = document.getElementById("storyBlock");
 
-  radios.forEach((radio) => {
-    radio.addEventListener('change', () => {
-      if (radio.value === 'story' && radio.checked) {
-        storyBlock.classList.remove('hidden');
-      }
+    function updateStoryBlock() {
+      const selected = document.querySelector('input[name="songPlan"]:checked');
 
-      if (radio.value === 'quick' && radio.checked) {
-        storyBlock.classList.add('hidden');
+      if (selected && selected.value === "story") {
+        storyBlock.style.display = "block";
+      } else {
+        storyBlock.style.display = "none";
       }
+    }
+
+    radios.forEach((radio) => {
+      radio.addEventListener("change", updateStoryBlock);
     });
+
+    updateStoryBlock();
   });
 </script>
 
