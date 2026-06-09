@@ -48,7 +48,7 @@ const translations = {
     stylePianoDesc: "Легкий, сучасний і мелодійний варіант.",
     stylePassionDesc: "Більше емоцій, вогню і сильного почуття.",
     styleFamilyDesc: "Тепла пісня для мами, тата, дітей або всієї родини.",
-    styleCinematicDesc: "Як музика до важливого моменту життя."
+   styleCinematicDesc: "Як музика до важливого моменту життя.", uploadBack: "← Назад до стилю", uploadTitle: "Додайте фото для відео", uploadSubtitle: "Фото допоможе зробити привітання більш особистим.", uploadBoxTitle: "Завантажте 1–5 фото", uploadBoxText: "У MVP це поки макет. Реальне завантаження підключимо наступним кроком.", uploadNext: "Далі — обрати тариф"
   },
 
   ru: {
@@ -100,7 +100,7 @@ const translations = {
     stylePianoDesc: "Лёгкий, современный и мелодичный вариант.",
     stylePassionDesc: "Больше эмоций, огня и сильного чувства.",
     styleFamilyDesc: "Тёплая песня для мамы, папы, детей или всей семьи.",
-    styleCinematicDesc: "Как музыка к важному моменту жизни."
+    styleCinematicDesc: "Как музыка к важному моменту жизни.", uploadBack: "← Назад к стилю", uploadTitle: "Добавьте фото для видео", uploadSubtitle: "Фото поможет сделать поздравление более личным.", uploadBoxTitle: "Загрузите 1–5 фото", uploadBoxText: "В MVP это пока макет. Реальную загрузку подключим следующим шагом.", uploadNext: "Дальше — выбрать тариф"
   },
 
   pl: {
@@ -152,7 +152,7 @@ const translations = {
     stylePianoDesc: "Lekki, nowoczesny i melodyjny wariant.",
     stylePassionDesc: "Więcej emocji, ognia i mocnego uczucia.",
     styleFamilyDesc: "Ciepła piosenka dla mamy, taty, dzieci albo całej rodziny.",
-    styleCinematicDesc: "Jak muzyka do ważnego momentu w życiu."
+    styleCinematicDesc: "Jak muzyka do ważnego momentu w życiu.", uploadBack: "← Wróć do stylu", uploadTitle: "Dodaj zdjęcia do wideo", uploadSubtitle: "Zdjęcia pomogą zrobić życzenia bardziej osobistymi.", uploadBoxTitle: "Prześlij 1–5 zdjęć", uploadBoxText: "W MVP to na razie makieta. Prawdziwe przesyłanie plików podłączymy w następnym kroku.", uploadNext: "Dalej — wybierz cennik"
   }
 };
 
